@@ -5,17 +5,17 @@ let c = parseInt(prompt(`digite o terceiro valor do triângulo: `));
 
 
 if (a < (b + c) && b < (a + c) && c < (a + b)) {
-  console.log('é um triangulo');
+  document.getElementById('triangulo').innerHTML = 'É um triangulo';
   
   if (a == b && a == c) {
-    console.log('Triângulo Equilátero');
+    document.getElementById('saida').innerHTML = 'Triângulo Equilátero';
   }
   else if (a === b || a === c || b === c) {
-    console.log('Triângulo Isósceles');
+    document.getElementById('saida').innerHTML ='Triângulo Isósceles';
   }
   else {
-    console.log('Triângulo Escaleno');
+    document.getElementById('saida').innerHTML ='Triângulo Escaleno';
   }
 } else {
-  console.log('Não forma um triângulo');
+  document.getElementById('saida').innerHTML ='Não forma um triângulo';
 }
