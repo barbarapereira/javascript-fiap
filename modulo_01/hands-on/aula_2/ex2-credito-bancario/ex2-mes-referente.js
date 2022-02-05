@@ -1,4 +1,4 @@
-let mes = parseInt(prompt('Digite um número de 1 a 12 para ver o mês refernte'));
+let mes = parseInt(prompt('Digite um número de 1 a 12 para ver o mês referente'));
 
 switch(mes) {
   case 1:
