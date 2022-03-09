@@ -1,0 +1,32 @@
+/*
+seletor - quem você deseja formatar
+propriedade - o que você deseja formatar no seletor
+valor - o que será mudado na propriedade
+seletor{
+    propriedade: valor; 
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: rgb(20, 76, 139);
+  font-optical-sizing: 50x;
+}
+
+h2,h3 {
+    color: #ff9812;
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    color: rgba(14,65,14);
+    font-size: 18px;
+
+}
