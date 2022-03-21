@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* reset básico - Seletor asterisco (*) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-first: #FFF;
+    --color-second: #000;
+    --color-third: #DB2A4E;
+    --color-fourth: rgb(13,9,51);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* formatações genéricas */
+ul, ol {
+    /* tirando os marcadores das listas */
+    list-style: none;
+}
+
+a {
+    /* tirando o underline dos textos */
+    text-decoration: none;
+    color: var(--color-first);
+    font-weight: 900;
+}
+/* início menu */
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: #888; */ 
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu a:hover{
+    color:var(--color-third);
+    transition: .3s;
+}
+
+.nav-menu li {
+    margin: 0 30px;
+}
+.logo{
+    color: var(--color-first);
+}
+
+.btn{
+    background-color: var(--color-third);
+    color: var(--color-first);
+    padding: 5px 30px;
+    border-radius: 30PX;
+    font-weight: 700;
+    border: 1px solid var(--color-third);
+    transition: .2s;
+}
+
+.btn:hover{
+    background-color: transparent;
+}
+
+.menu-btn{
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    display: none;
+    color: var(--color-first);
+}
+/* quando houver um scroll de tela, o menu mudará sua cor */
+.active-scroll{
+    background-color: var(--color-fourth);
+}
+/* fim menu */
+
+/* início header */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0)),
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content{
+    margin: 150px 0;
+    color: var(--color-first);
+    text-align: center;
+}
+.header-content h2{
+    margin: 50px 0;
+    font-size: 8vmin;
+}
+.header-content h3{
+    margin: 50px 0;
+    font-size: 5vmin;
+}
+/* fim header */
+.tour{
+    width: 80%;
+    height: 200vh;
+    margin: 70px auto;
+    background-color: #888;
+}
+/*Inicio Media Query*/
+@media(max-width: 850px){
+    .menu-btn{
+        display: block;
+    }
+    .nav-bar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: var(--color-fourth);     
+        margin-top: -999px;   
+        transition: .2s;
+    }
+    .mobile-menu{
+        margin-top: 0;
+    }
+    .nav-menu li {
+        margin: 30px auto;
+    }
+    .nav-menu a{
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+@media(max-width: 620px){
+    .header-content{
+        padding: 0 10px;
+    }
+}
