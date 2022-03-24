@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Formulários</title>
+</head>
+<body>
+  <h1>Exemplo de Formulário</h1>
+  <form action="" id="dados" name="dados" method="post">
+    <div>
+      <label for="user">Usuario</label>
+      <input type="text" name="user" id="user" placeholder="Ex: Maria da Silva" minlength="10" maxlength="20" required>
+    </div>
+
+    <div>
+      <label for="pass">Senha</label>
+      <input type="password" name="pass" id="pass" placeholder="Ex: 123456" minlength="6" maxlength="10" required>
+    </div>
+
+    <p>Selecione sua Área de Atuação</p>
+    <input type="radio" name="profissao" id="frontend" value="1">
+    <label for="frontend">Front-End</label>
+
+    <input type="radio" name="profissao" id="backend" value="2">
+    <label for="backend">Back-End</label>
+
+    <input type="radio" name="profissao" id="fullstack" value="3">
+    <label for="fullstack">Full-Stack</label>
+
+    <input type="radio" name="profissao" id="devops" value="4">
+    <label for="devops">DevOps</label>
+  </form>
+</body>
+</html>

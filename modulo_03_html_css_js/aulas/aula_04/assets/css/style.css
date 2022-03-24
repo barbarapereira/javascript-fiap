@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* reset básico - Seletor asterisco (*) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-first: #FFF;
+    --color-second: #000;
+    --color-third: #DB2A4E;
+    --color-fourth: rgb(13,9,51);
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* formatações genéricas */
+ul, ol {
+    /* tirando os marcadores das listas */
+    list-style: none;
+}
+
+a {
+    /* tirando o underline dos textos */
+    text-decoration: none;
+    color: var(--color-first);
+    font-weight: 900;
+}
+/* início menu */
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: #888; */ 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu a:hover{
+    color:var(--color-third);
+    transition: .3s;
+}
+
+.nav-menu li {
+    margin: 0 30px;
+}
+.logo{
+    color: var(--color-first);
+}
+
+.btn{
+    background-color: var(--color-third);
+    color: var(--color-first);
+    padding: 5px 30px;
+    border-radius: 30PX;
+    font-weight: 700;
+    border: 1px solid var(--color-third);
+    transition: .2s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--color-third);
+}
+
+.menu-btn{
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    display: none;
+    color: var(--color-first);
+}
+/* quando houver um scroll de tela, o menu mudará sua cor */
+.active-scroll{
+    background-color: rgba(10, 9, 17, 0.863)
+}
+/* fim menu */
+
+/* início header */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0)),
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content{
+    margin: 150px 0;
+    color: var(--color-first);
+    text-align: center;
+}
+.header-content h2{
+    margin: 50px 0;
+    font-size: 8vmin;
+}
+.header-content h3{
+    margin: 50px 0;
+    font-size: 5vmin;
+}
+/* fim header */
+
+/* inicio sessão Tour */
+.tour{
+    width: 80%;
+    margin: 70px auto;
+}
+.tour-title{
+    text-align: center;
+    font-size: 4vmin;
+    margin-bottom: 40px;
+}
+.line{
+    width: 150px;
+    background-color: var(--color-third);
+    height: 4px;
+    border-radius: 7px;
+    margin: 40px auto;
+}
+.tour-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.tour-list-item{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    box-shadow: 0 3px 16px rgba(0,0,0.3);
+    padding: 40px 20px;
+    border-radius: 7px;
+}
+.tour-list-item img{
+    width: 80%;
+    border-radius: 7px; 
+    box-shadow: 0 3px 16px rgba(0,0,0.3);   
+}
+.tour-list-item img:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    cursor: pointer;
+}
+.tour-list-item h3{
+    font-size: 3vmin;
+    margin: 40px 20px;
+}
+.tour-list-item p{
+    padding: 0 50px;
+    text-transform: center;
+    margin-bottom: 30px;
+
+}
+/* fim da sessão Tour */
+
+/* inicio explore */
+.explore{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0.8),rgba(0,0,0,0)),
+    url(../images/pexels-kleber-m-ortiz-4028995.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.explore-content{
+    width: 60%;
+    color: var(--color-first);
+    padding: 50px;
+} 
+.explore-content h2{
+    font-size: 7vmin;
+}
+.explore-content .line{
+    width: 60%;
+    margin: 40px 0;
+}    
+.explore-content p{
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+/* fim explore */
+
+/* inicio eventos */
+.eventos{
+    width: 100%;
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+}
+.eventos-content{
+    width: 50%;
+    justify-content: center;
+}
+.eventos-texto {
+    margin: 0 20px 0 60px;
+}
+.eventos-content h2{
+    font-size: 3vh;
+}
+.eventos-content p{
+    line-height: 30px;
+    margin: 20px 0 50px 0;
+}
+.eventos-content img{
+    width: 40%;    
+    margin: 15px;
+    border-radius: 7px; 
+    box-shadow: 0 3px 16px rgba(0,0,0.3); 
+}
+.eventos-content img:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    cursor: pointer;
+}
+/* fim eventos */
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: #100032;
+    color: var(--color-first);
+    margin: 0 auto;
+}
+.footer-section{
+    width: 100%;
+    display: flex;
+    padding: 40px 100px;
+    justify-content: center;
+}
+.footer-content{
+    width: 25%;
+    margin-right: 15px;
+}
+.footer-content .line{
+    margin: 15px 0 20px 0;
+    height: 1px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content h3{
+    font-size: 2vh;
+    margin: 15px 0;
+}
+.footer-content h3.subtitle{
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.footer-content a{
+    font-size: 2vh;
+    line-height: 20px;
+    font-weight: 200;
+}
+.footer-content a:hover{
+    color:var(--color-third);
+    transition: .3s;
+    font-weight: 900;
+}
+.footer-content p, li{
+    font-size: 2vh;
+    line-height: 30px;
+}
+.footer-content i {
+    margin-right: 15px ;
+    font-size: 3vh;
+    
+}
+/*Inicio Media Query*/
+@media(max-width: 850px){
+    .menu-btn{
+        display: block;
+    }
+    .nav-bar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: var(--color-fourth);     
+        margin-top: -999px;   
+        transition: .2s;
+    }
+    .mobile-menu{
+        margin-top: 0;
+    }
+    .nav-menu li {
+        margin: 30px auto;
+    }
+    .nav-menu a{
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    /* fim do header */
+ 
+    .tour-list{
+        flex-direction: column;
+    }
+    .tour-list-item{
+        width: 100%;
+        text-align: center;
+    }
+    .tour-list-item img{
+        margin-top: 25px;
+    }
+    /* explore */
+    .explore-content{
+        width: 100%;
+    }
+    /* inicio eventos */
+    .eventos{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .eventos-content{
+        width: 100%;
+        margin: 30px auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .eventos-texto{
+        margin: 0;
+    }
+    .eventos-content .btn{ 
+        margin: 30px auto;
+    }
+    .eventos-content p{
+        padding: 0 20px;
+    }
+    .eventos-img img{
+        margin: 10px;
+    }
+    .footer-section{
+        flex-direction: column;
+    }
+    .footer-content{
+        width: 100%;
+    }
+    .footer-icon{
+        display: flex;
+    }
+}
+@media(max-width: 620px){
+    .header-content{
+        padding: 0 10px;
+    }
+}

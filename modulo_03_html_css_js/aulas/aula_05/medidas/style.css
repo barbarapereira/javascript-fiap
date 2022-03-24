@@ -1,0 +1,28 @@
+/* .caixa{
+  font-size: 16px;
+}
+.box1{
+  font-size: 20px;
+}
+.box h2{
+  font-size: 3em;
+}
+.box p {
+  font-size: 2em;
+} */
+html{
+  font-size: 62.5%; /*representam 10px de 16px*/
+}
+
+h2{
+  font-size: 3em;
+  border: 1px solid black;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  background-color: #F60;
+  margin-bottom: 2.125rem;
+}
+
+p{
+  font-size: 2rem;
+}
