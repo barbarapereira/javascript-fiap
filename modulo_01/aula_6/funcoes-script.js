@@ -5,6 +5,18 @@ function retorna(a=2){
 console.log(` ${retorna(3)}`);//exibe 3
 console.log(` ${retorna()}`);//exibe 2
 
+const pessoa={
+  nome: "Bárbara",
+  idade: 31
+}
+
+function exibir(x){
+  console.log(`${x.nome}, ${x.idade}`);
+}
+
+exibir(pessoa)
+
+
 /* 
 //------------OPERADOR REST-----------
 function frutas(a,b, ...c){
