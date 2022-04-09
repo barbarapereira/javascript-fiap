@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+            integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Reserva de Viagem</title>
+    </head>
+
+    <body>
+
+        <main class="wrapper">
+         
+            <div class="image-form">
+                <img src="./assets/img/astronaut-animate.svg" alt="animação astronauta">
+            </div>
+
+            <div class="container-form">
+                <h2> <i class="fa-solid fa-rocket rocket"></i> Venha viajar para Marte - Cadastre-se</h2>
+                <form name="dados" id="dados" action="" method="post">
+                    <div class="form-item">
+                        <label for="nome">Seu Nome</label>
+                        <input type="text" id="nome" placeholder="Ex: Jimmy Page" autofocus required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="rua">Usuário</label>
+                        <input type="text" id="rua" required placeholder="Ex: Guitarman">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="numero">Senha</label>
+                        <input type="text" id="numero" required placeholder="Ex: 123456">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input type="email" id="numero" required placeholder="Ex: jimmypage@zeppelin.com">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="data">Data de Nascimento</label>
+                        <input type="date" id="data" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="data">Área de atuação</label>
+                        <input list="area" id="atuacao" class="lista" required placeholder="Digite ou selecione">
+                        <datalist id="area">
+                            <option value="Front-End">
+                            <option value="Back-End">
+                            <option value="Full Stack">
+                            <option value="DevOps">
+                            <option value="Banco de Dados">
+                            <option value="Gestão de Projetos">
+                        </datalist>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="informacoes">Conta pra nós quem é você</label>
+                        <textarea name="" id="informações"
+                            placeholder="Ex: Eu sou uma pessoa muito organizada"></textarea>
+                    </div>
+                    <div class="botoes">
+                        <button type="submit">Enviar Dados </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+
+    </body>
+
+</html>

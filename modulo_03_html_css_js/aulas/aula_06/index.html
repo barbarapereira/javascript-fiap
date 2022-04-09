@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - aula 06</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" id="dados" name="dados" method="post">
+      <div class="user">
+        <label for="user">Usuario</label>
+        <input type="text" name="user" id="user" placeholder="Ex: Maria da Silva" minlength="10" maxlength="20" required>
+      </div>
+  
+      <div class="password">
+        <label for="pass">Senha</label>
+        <input type="password" name="pass" id="pass" placeholder="Ex: 123456" minlength="6" maxlength="10" required>
+      </div>
+  
+      <div class="radio">
+          <p>Selecione sua Área de Atuação</p>
+          <input type="radio" name="profissao" id="frontend" value="1">
+          <label for="frontend">Front-End</label>
+      
+          <input type="radio" name="profissao" id="backend" value="2">
+          <label for="backend">Back-End</label>
+      
+          <input type="radio" name="profissao" id="fullstack" value="3">
+          <label for="fullstack">Full-Stack</label>
+      
+          <input type="radio" name="profissao" id="devops" value="4">
+          <label for="devops">DevOps</label>
+      </div>
+
+      <div class="checkbox">
+          <p>Selecione suas preferências:</p>
+          <input type="checkbox" name="viajar" id="viajar" value="1">
+          <label for="viajar">Viajar</label>
+
+          <p>Selecione suas preferências:</p>
+          <input type="checkbox" name="games" id="games" value="2">
+          <label for="games">Jogar Videogame</label>
+
+          <p>Selecione suas preferências:</p>
+          <input type="checkbox" name="ler" id="ler" value="3">
+          <label for="ler">Ler</label>
+
+          <p>Selecione suas preferências:</p>
+          <input type="checkbox" name="comer" id="comer" value="4">
+          <label for="comer">Comer</label>
+      </div>
+
+      <div class="select">
+          <label for="edication">Selecione sua formação:</label>
+          <select name="edication selected" id="edication">
+              <option value="0" disabled>Escolha uma opção</option>
+              <option value="1">Ensino Médio</option>
+              <option value="2">Ensino Superior</option>
+              <option value="3">Pós-Graduação</option>
+              <option value="4">Mestrado</option>
+              <option value="5">Doutorado</option>
+          </select>
+      </div>
+
+      <div class="datalist">
+        <label for="education1">Selecione sua formação (Datalist):</label>
+        <input list="education1" >
+        <datalist name="education1 selected" id="education1">
+            <option value="Ensino Médio">
+            <option value="Ensino Superior">
+            <option value="Pós-Graduação">
+            <option value="Mestrado">
+            <option value="Doutorado">
+        </datalist>
+    </div>
+
+    <div class="file">
+        <label for="file">Enviar Arquivo</label>
+        <input type="file" id="file" name="file"> 
+    </div>
+
+    <div class="data">
+        <label for="date">Data da Viagem</label>
+        <input type="date" name="date" id="date">
+    </div>
+
+    <div class="time">
+        <label for="time">Hora do Embarque</label>
+        <input type="time" name="time" id="time">
+    </div>
+
+    <div class="datetime">
+        <label for="dateTime">Data e Hora</label>
+        <input type="datetime-local" name="datetime" id="datetime">
+    </div>
+
+    <div class="week">
+        <label for="week">Mês</label>
+        <input type="week" name="week" id="week">
+    </div>
+
+    <div class="number">
+        <label for="number">Número</label>
+        <input type="number" name="number" id="number" min="100" max="200" step="10">
+    </div>
+
+    <div class="range">
+        <label for="range">Escala</label>
+        <input type="range" name="range" id="range">
+    </div>
+
+    <div class="tel">
+        <label for="tel">Telefone</label>
+        <input type="tel" name="tel" id="tel" >
+    </div>
+
+    <div class="email">
+        <label for="email" required>Email</label>
+        <input type="email" name="email" id="email">
+    </div>
+
+    <div class="url">
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url">
+    </div>
+
+    <div class="search">
+        <label for="search">Pesquisa</label>
+        <input type="search" name="search" id="search">
+    </div>
+
+    <div class="color">
+        <label for="color">Cor</label>
+        <input type="color" name="color" id="color">
+    </div>
+
+    <div class="button">
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Limpar Formulário</button>
+        <button type="button">Chamar JS</button>
+    </div>
+
+    <div class="textarea">
+        <label for="message">Enviar Mensagem:</label>
+        <textarea name="message" id="message"></textarea>
+    </div>
+
+    </form>
+</body>
+</html>
