@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HomeController from './Screens/Home/HomeController';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HomeController />
   </React.StrictMode>,
   document.getElementById('root')
 );
