@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HomeController from './Screens/Home/HomeController';
+import LayoutController from './Screens/Layout/LayoutController'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomeController />
+    <LayoutController />
   </React.StrictMode>,
   document.getElementById('root')
 );
