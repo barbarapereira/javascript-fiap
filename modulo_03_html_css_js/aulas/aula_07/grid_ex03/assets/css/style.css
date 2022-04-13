@@ -1,0 +1,53 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+   padding: 1rem;
+   color: #fff;
+   font-size: 3rem;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   grid-template-rows: calc(20vh - 2rem) calc(70vh - 2rem) calc(10vh - 1rem);
+   gap: 1rem;
+   grid-template-areas: 
+    "header header"
+    "main   aside"
+    "footer footer";
+}
+
+header{
+    background-color: hsl(252, 24%, 19%);
+    grid-area: header;
+}
+main{
+    background-color: hsl(252, 6%, 40%);
+    grid-area: main;
+}
+
+aside{    
+    background-color: hsl(252, 31%, 24%);
+    grid-area: aside;
+}
+
+footer{
+    background-color: hsl(252, 57%, 26%);
+    grid-area: footer;
+}
+
+@media(max-width: 75rem){
+    .container{
+        grid-template-rows: calc(20vh - 2rem) calc(70vh - 2rem) calc(10vh - 1rem);
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "aside" "footer";
+    }
+}

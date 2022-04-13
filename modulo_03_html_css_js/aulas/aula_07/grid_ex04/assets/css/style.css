@@ -1,0 +1,60 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+ background-color: #333;
+ color: white;
+ margin: 20px auto;
+ width: 90%;
+ min-height: 100vh;
+ display: grid;
+ /* grid-template-columns: repeat(3, 1f);  => mesma coisa*/
+ grid-template-columns: repeat(1fr 1fr 1fr);
+ gap: 1rem;
+ grid-template-areas: 
+    "box1 box1 box1"
+    "box2 box2 box3"
+    "box2 box2 box3"
+    "box4 box5 box5"
+    "box4 box5 box5"
+    "box4 box5 box5"
+    "box4 box5 box5"
+    "box6 box6 box6";
+}
+
+.box1{ background-color: hsl(252, 24%, 19%); grid-area: box1;}
+.box2{ background-color: hsl(252, 6%, 40%);  grid-area: box2;}
+.box3{ background-color: hsl(253, 24%, 39%); grid-area: box3;}
+.box4{ background-color: hsl(252, 57%, 26%); grid-area: box4;}
+.box5{ background-color: hsl(254, 19%, 44%); grid-area: box5;}
+.box6{ background-color: hsl(252, 67%, 58%); grid-area: box6;}
+
+@media(max-width: 75rem){
+    .container{
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box2"
+        "box3"
+        "box3"
+        "box4"
+        "box4"
+        "box4"
+        "box4"
+        "box5"
+        "box5"
+        "box5"
+        "box5"
+        "box6";
+    }    
+}

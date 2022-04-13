@@ -1,0 +1,35 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: #333;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+
+    /* alinhamento horizontal */
+    justify-items: center;
+
+    /* alinhamento vertical; */
+    align-items: center;
+}
+
+.box{
+    background-color: #ccc;
+    width: 50%;
+    height: 50%;
+}

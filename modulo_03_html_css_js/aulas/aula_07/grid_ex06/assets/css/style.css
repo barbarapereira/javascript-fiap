@@ -1,0 +1,31 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.gallery{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    grid-template-areas: 
+    "img01 img01 img02 img03"
+    "img01 img01 img04 img04";
+}
+
+.img01{ grid-area: img01; }
+.img02{ grid-area: img02; }
+.img03{ grid-area: img03;}
+.img04{ grid-area: img04;}

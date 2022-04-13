@@ -1,0 +1,33 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: tomato;
+}
+
+.container{
+    max-width: 110rem;
+    margin: auto;
+    padding: 2rem;    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+}
+
+.box{
+    background-color: white;
+    padding: 1.5rem 1.5rem 4rem 1.5rem;
+}
+
+.photo{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
