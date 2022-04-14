@@ -8,7 +8,7 @@
 const arr = ['FIAP', 'SHIFT','JAVASCRIPT','REACT','ANGULAR'];
 const arr1 = [4,5,6];
 
-console.log(`\n array arr: ${arr}`);
+console.log(`\n array arr: ${arr.join(" - ")}`);
 console.log(`\n array arr1: ${arr1}`);
 
 arr2 = arr.concat(arr1);
