@@ -5,6 +5,7 @@
 const a = ['Ana', 'Bárbara', 'Alice', 'Carla', 'Maria']
 
 const arr = a.filter(element => {
-    // return console.log(element[0].toLowerCase() === "a");
-    return console.log(element.startsWith("A"));
+     //return element[0].toLowerCase() === "a";
+    return element.startsWith("A");
 })
+console.log(a);

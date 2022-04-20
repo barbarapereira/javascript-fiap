@@ -11,14 +11,14 @@ const arr1 = [4,5,6];
 console.log(`\n array arr: ${arr.join(" - ")}`);
 console.log(`\n array arr1: ${arr1}`);
 
-arr2 = arr.concat(arr1);
-console.log(`\n array concatenado arr2: ${arr2}`);
+arrConcat = arr.concat(arr1);
+console.log(`\n array concatenado arrConcat: ${arrConcat}`);
 
-arr2.push(1)
-arr2.push(2)
+arrConcat.push(1)
+arrConcat.push(2)
 
-console.log(`\n add os valores 1 e 2 com push: ${arr2}`);
+console.log(`\n add os valores 1 e 2 com push: ${arrConcat}`);
 
-arr2.shift();
+arrConcat.shift();
 
-console.log(`\n removendo com shift: ${arr2}`);
+console.log(`\n removendo com shift: ${arrConcat}`);
