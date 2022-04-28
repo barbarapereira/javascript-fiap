@@ -1,8 +1,9 @@
 import './App.css';
 
 function App() {
-  let hello = "Hello World: ";
-  let rand = (Math.random() * 100).toFixed(0);
+
+  const rand = (Math.random() * 100).toFixed(0);
+  const hello = "Hello World";
 
   return (
     <div className="App">
