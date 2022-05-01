@@ -1,9 +1,16 @@
-body{
+body {
     background-color: #000;
 }
 
 .App {
-    text-align: center;
     font-size: 30px;
     color: #ed145b
+}
+
+button {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #ed145b;
+    color: #fff;
+    border-radius: 5px;
 }

@@ -2,9 +2,13 @@ import React from 'react';
 import './Home.css';
 
 function HomeView(props) {
-    console.log(props)
     return (
-        <div className="App" >Contando - {props.count}</div>
+        <div>
+            <div className="App" >
+                Contando - {props.count} - {props.count1}
+            </div>
+            <button onClick={props.addCount}> Adc valor</button>
+        </div>
     );
 };
 
