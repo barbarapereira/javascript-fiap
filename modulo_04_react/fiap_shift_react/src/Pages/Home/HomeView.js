@@ -1,9 +1,10 @@
 import React from 'react';
 import './Home.css';
 
-function HomeView() {
+function HomeView(props) {
+    console.log(props)
     return (
-        <div className="App">Hello World HomeView</div>
+        <div className="App" >Contando - {props.count}</div>
     );
 };
 
