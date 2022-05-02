@@ -1,10 +1,12 @@
 body {
-    background-color: #000;
+    background-color: #ddd;
+    text-align: center;
 }
 
 .App {
     font-size: 30px;
     color: #ed145b
+    
 }
 
 button {
@@ -13,4 +15,5 @@ button {
     background-color: #ed145b;
     color: #fff;
     border-radius: 5px;
+    align-items: c;
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import HomeView from './HomeView';
-import './Home.css';
 
 export default class HomeController extends Component {
 
@@ -8,7 +7,8 @@ export default class HomeController extends Component {
     super();
     this.state = {
       count: 0,
-      count1: 0
+      count1: 0,
+      estaCarregando: false
     };
 
     setInterval(() => {
@@ -25,12 +25,18 @@ export default class HomeController extends Component {
     })
   }
 
+  iniciaLogin = () => {
+    this.setState({
+      estaCarregando: !this.state.estaCarregando
+    })
+  }
+
   render() {
     return(
-      <HomeView  
-        count={this.state.count}
-        count1={this.state.count1}
-        addCount={this.addCount} />
+      <HomeView
+        estaCarregando={this.state.estaCarregando} 
+        iniciaLogin={this.iniciaLogin} 
+      />
     )
   }
 } 
