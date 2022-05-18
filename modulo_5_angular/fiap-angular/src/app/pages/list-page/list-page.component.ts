@@ -18,7 +18,7 @@ export class ListPageComponent implements OnInit {
   }
 
   onClick(eventValue: any){
-    console.log('Funcionu', eventValue);
+    console.log('funcionou ', eventValue);
   }
 
 }
