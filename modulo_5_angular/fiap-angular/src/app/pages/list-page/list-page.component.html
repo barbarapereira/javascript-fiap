@@ -1,0 +1,14 @@
+<div
+  *ngFor="let item of myList;"
+  class="card"
+  (click)="onClick(item.id)"
+  >
+  <p>id: {{ item.id }}</p>
+  <p>name: {{ item.name }}</p>
+</div>
+
+<app-list-item *ngFor="let item of myList;"
+  [item]="item">
+  (myAntenna)="onClick($event)"
+>
+</app-list-item>
